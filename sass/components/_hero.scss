@@ -1,0 +1,100 @@
+/* -----------------------------Hero------------------------------ */
+.hero {
+  background: var(--darck-background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.hero-flex {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  margin-left: 252px;
+  margin-right: 252px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.hero-button {
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin-left: 485px;
+  margin-right: 485px;
+  margin-top: 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-button-text-color);
+  background-color: var(--hero-button-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+/* -----------------------Особенности--------------------------- */
+.flex-propet {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.flex-propet-list {
+  display: flex;
+}
+.propet-item:not(:last-child) {
+  margin-right: 30px;
+}
+.propet-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+}
+.propet-text {
+  display: inline-block;
+  min-width: 270px;
+  min-height: 75px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.propet-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.propet-icon-item {
+  display: block;
+  width: 70px;
+  height: 70px;
+}

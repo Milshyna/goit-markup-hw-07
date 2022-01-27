@@ -1,0 +1,44 @@
+/* ---------------Постоянные клиенты------------------------ */
+.clients {
+  background-color: var(--header-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client--icon-list {
+  display: flex;
+  justify-content: center;
+}
+.client-icon-item + .client-icon-item {
+  margin-left: 30px;
+}
+
+.client-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--header-background);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-icon-link:hover .client-icon {
+  fill: var(--accent-text-color);
+}
+.client-icon-link:focus .client-icon {
+  fill: var(--accent-text-color);
+}
+.client-icon-link:hover {
+  border: 1px solid var(--button-active-background);
+}
+.client-icon-link:focus {
+  border: 1px solid var(--button-active-background);
+}
