@@ -47,54 +47,8 @@
   background-color: var(--hero-button-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-}
-/* -----------------------Особенности--------------------------- */
-.flex-propet {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.flex-propet-list {
-  display: flex;
-}
-.propet-item:not(:last-child) {
-  margin-right: 30px;
-}
-.propet-title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--header-text-color);
-}
-.propet-text {
-  display: inline-block;
-  min-width: 270px;
-  min-height: 75px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-}
-.propet-icon {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.propet-icon-item {
-  display: block;
-  width: 70px;
-  height: 70px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

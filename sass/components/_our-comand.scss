@@ -18,10 +18,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.author-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .img-author {
   display: block;
   width: 270px;
@@ -54,24 +55,25 @@
   display: flex;
   justify-content: center;
 }
-.author-icon-item + .author-icon-item {
-  margin-left: 10px;
-}
+
 .author-icon-item {
   margin-top: 16px;
+  & + & {
+    margin-left: 10px;
+  }
 }
-.author-icon-link:hover {
-  background-color: var(--button-active-background);
-}
-.author-icon-link:focus {
-  background-color: var(--button-active-background);
-}
-.author-icon-link:hover .author-icon {
-  fill: var(--white-text-color);
-}
-.author-icon-link:focus .author-icon {
-  fill: var(--white-text-color);
-}
+// .author-icon-link:hover {
+//   background-color: var(--button-active-background);
+// }
+// .author-icon-link:focus {
+//   background-color: var(--button-active-background);
+// }
+// .author-icon-link:hover .author-icon {
+//   fill: var(--white-text-color);
+// }
+// .author-icon-link:focus .author-icon {
+//   fill: var(--white-text-color);
+// }
 .author-icon-link {
   display: flex;
   justify-content: center;
@@ -81,8 +83,16 @@
   background-color: var(--header-background);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-background);
+  }
 }
 .author-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .author-icon-link:hover &,
+  .author-icon-link:focus & {
+    fill: var(--white-text-color);
+  }
 }

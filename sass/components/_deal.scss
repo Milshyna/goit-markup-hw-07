@@ -22,11 +22,11 @@
   display: block;
   width: 370px;
   height: 294px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.img-work-item:not(:last-child) {
-  margin-right: 30px;
-}
-.img-position {
+.img-work-item .img-position {
   position: relative;
   display: block;
 }

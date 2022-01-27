@@ -4,7 +4,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.client--icon-list {
+.client-icon-list {
   display: flex;
   justify-content: center;
 }
@@ -23,22 +23,22 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border: 1px solid var(--button-active-background);
+  }
+  &:focus {
+    border: 1px solid var(--button-active-background);
+  }
 }
 .client-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.client-icon-link:hover .client-icon {
-  fill: var(--accent-text-color);
-}
-.client-icon-link:focus .client-icon {
-  fill: var(--accent-text-color);
-}
-.client-icon-link:hover {
-  border: 1px solid var(--button-active-background);
-}
-.client-icon-link:focus {
-  border: 1px solid var(--button-active-background);
+  .client-icon-link:hover & {
+    fill: var(--accent-text-color);
+  }
+  .client-icon-link:focus & {
+    fill: var(--accent-text-color);
+  }
 }

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CACD,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,AAAC,CACD,MAAM,CAAE,CAAC,CACV,AACD,AAAA,EAAE,CACF,EAAE,AAAC,CACD,MAAM,CAAE,CAAC,CACT,YAAY,CAAE,CAAC,CAChB,AACD,AAAA,MAAM,AAAC,CACL,MAAM,CAAE,OAAO,CAChB",
-    "sources": [
-        "../../sass/resept.scss"
-    ],
-    "names": [],
-    "file": "resept.min.css"
-}
