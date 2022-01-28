@@ -13,7 +13,7 @@
   color: var(--header-text-color);
 }
 .picture-work {
-  display: flex;
+  @extend %sample;
 }
 .work-title {
   margin-bottom: 50px;

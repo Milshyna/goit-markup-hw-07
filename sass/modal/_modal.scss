@@ -36,7 +36,7 @@
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
+  @extend %sample;
   padding: 10px;
   width: 30px;
   height: 30px;
@@ -59,7 +59,7 @@
 }
 
 .form-modal {
-  display: flex;
+  @extend %sample;
   flex-direction: column;
 }
 .title-modal {
@@ -147,7 +147,7 @@
 }
 
 .btm-form-modal {
-  display: flex;
+  @extend %sample;
   border: none;
   width: 200px;
   height: 50px;

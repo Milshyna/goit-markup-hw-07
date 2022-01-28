@@ -3,19 +3,11 @@
   background: var(--darck-background);
 }
 .flex-footer {
-  display: flex;
+  @extend %sample;
   flex-direction: column;
-}
-.address-nav {
-  display: flex;
-  flex-direction: column;
-}
-.logotype.logotype-footer {
-  color: var(--white-text-color);
-  margin-bottom: 22px;
 }
 
-.address-text-footer {
+.address__footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -24,19 +16,12 @@
   font-style: normal;
   margin-bottom: 11px;
 }
-.footer-tel {
-  margin-top: 11px;
-}
-.address-nav .footer-tel,
-.address-nav .footer-mail {
-  color: var(--footer-text-tel-color);
-  font-style: normal;
-}
-.footer-sectioun {
-  display: flex;
+
+.footer__sectioun {
+  @extend %sample;
   align-items: baseline;
 }
-.footer-right-title {
+.footer-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -44,57 +29,22 @@
   text-transform: uppercase;
   color: var(--white-text-color);
 }
-.footer-right {
+.footer-social__block {
   margin-left: 70px;
 }
-.footer-icon-list {
-  display: flex;
-  justify-content: flex-start;
-}
 
-.footer-icon-item {
-  margin-top: 20px;
-  & + & {
-    margin-left: 10px;
-  }
-}
-
-.footer-icon-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--button-active-background);
-  }
-}
-.footer-icon {
-  fill: var(--white-text-color);
-}
-.form-send {
-  display: flex;
-}
-.footer-form {
-  display: flex;
+.footer__form {
+  @extend %sample;
   margin-left: 93px;
   padding-top: 72px;
   padding-bottom: 94px;
 }
-.title-form-footer {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-  margin-bottom: 20px;
+.form__send {
+  @extend %sample;
+  align-items: center;
+  margin-top: 20px;
 }
-.input-form-footer {
+.form-send__input {
   width: 358px;
   height: 50px;
   background-color: var(--darck-background);
@@ -105,8 +55,9 @@
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
-.btn-form-footer {
-  display: flex;
+
+.form-send__btn {
+  @extend %sample;
   width: 200px;
   height: 50px;
   background: var(--button-active-background);
@@ -125,6 +76,6 @@
   margin-left: 12px;
   align-items: center;
 }
-.icon-btn-footer {
+.form-btn__icon {
   margin-right: 10px;
 }

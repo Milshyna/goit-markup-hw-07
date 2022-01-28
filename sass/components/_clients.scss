@@ -5,7 +5,7 @@
   padding-bottom: 94px;
 }
 .client-icon-list {
-  display: flex;
+  @extend %sample;
   justify-content: center;
 }
 .client-icon-item + .client-icon-item {
@@ -13,7 +13,7 @@
 }
 
 .client-icon-link {
-  display: flex;
+  @extend %sample;
   justify-content: center;
   align-items: center;
   width: 170px;

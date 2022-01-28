@@ -8,7 +8,7 @@
   margin-bottom: 50px;
 }
 .flex-author {
-  display: flex;
+  @extend %sample;
 }
 .author-item {
   flex-direction: column;
@@ -50,49 +50,4 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
-.author-icon-list {
-  display: flex;
-  justify-content: center;
-}
-
-.author-icon-item {
-  margin-top: 16px;
-  & + & {
-    margin-left: 10px;
-  }
-}
-// .author-icon-link:hover {
-//   background-color: var(--button-active-background);
-// }
-// .author-icon-link:focus {
-//   background-color: var(--button-active-background);
-// }
-// .author-icon-link:hover .author-icon {
-//   fill: var(--white-text-color);
-// }
-// .author-icon-link:focus .author-icon {
-//   fill: var(--white-text-color);
-// }
-.author-icon-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--header-background);
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--button-active-background);
-  }
-}
-.author-icon {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .author-icon-link:hover &,
-  .author-icon-link:focus & {
-    fill: var(--white-text-color);
-  }
 }

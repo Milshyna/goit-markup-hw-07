@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 .flex-propet-list {
-  display: flex;
+  @extend %sample;
 }
 .propet-item:not(:last-child) {
   margin-right: 30px;
@@ -28,7 +28,7 @@
   color: var(--second-text-color);
 }
 .propet-icon {
-  display: flex;
+  @extend %sample;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
