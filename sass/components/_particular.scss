@@ -2,13 +2,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.flex-propet-list {
+.propet {
   @extend %sample;
 }
-.propet-item:not(:last-child) {
+.propet__item:not(:last-child) {
   margin-right: 30px;
 }
-.propet-title {
+.propet__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -27,18 +27,16 @@
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-.propet-icon {
+.propet__icon {
   @extend %sample;
-  width: 270px;
-  height: 120px;
+  @include size(270px, 120px);
   background: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
-  align-items: center;
+  @extend %align;
   margin-bottom: 30px;
 }
 .propet-icon-item {
   display: block;
-  width: 70px;
-  height: 70px;
+  @include size(70px, 70px);
 }

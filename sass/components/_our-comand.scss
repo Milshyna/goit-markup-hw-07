@@ -4,13 +4,11 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.title-author {
-  margin-bottom: 50px;
-}
-.flex-author {
+
+.author {
   @extend %sample;
 }
-.author-item {
+.author__item {
   flex-direction: column;
   min-width: 270px;
   min-height: 368px;
@@ -25,15 +23,14 @@
 
 .img-author {
   display: block;
-  width: 270px;
-  height: 260px;
+  @include size(270px, 260px);
 }
-.flex-author-text {
+.author-text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.author-title {
+.author-text__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;

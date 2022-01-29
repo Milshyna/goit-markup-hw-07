@@ -1,42 +1,31 @@
 /* ----------------------Чем занимаемся------------------------- */
 
-.flex-work {
+.work {
   padding-bottom: 94px;
   padding-top: 2px;
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--header-text-color);
-}
+
 .picture-work {
   @extend %sample;
 }
-.work-title {
-  margin-bottom: 50px;
-}
-.img-work-item {
+
+.picture-work__item {
   display: block;
-  width: 370px;
-  height: 294px;
+  @include size(370px, 294px);
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-.img-work-item .img-position {
-  position: relative;
-  display: block;
+  & .img-position {
+    position: relative;
+    display: block;
+  }
 }
 
 .work-position {
   position: absolute;
   left: 0;
   bottom: 2px;
-  width: 100%;
-  height: 70px;
+  @include size(100%, 70px);
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
